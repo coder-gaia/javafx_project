@@ -1,6 +1,6 @@
 package gui;
 
-import application.HelloApplication;
+import application.Main;
 import gui.util.Alerts;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -39,7 +39,7 @@ public class MainViewController implements Initializable {
 
     @FXML
     public void onMenuItemDepartmentAction(){
-        System.out.println("onMenuItemDepartmentAction");
+        loadView("/gui/DepartmentList.fxml");
     }
 
     @Override
@@ -53,7 +53,7 @@ public class MainViewController implements Initializable {
             FXMLLoader loader = new FXMLLoader(getClass().getResource(absoluteName));
             VBox newVBox = loader.load();
 
-            Scene mainScene = HelloApplication.getMainScene();
+            Scene mainScene = Main.getMainScene();
             VBox mainVBox = (VBox) ((ScrollPane) mainScene.getRoot()).getContent();
 
             Node mainMenu = mainVBox.getChildren().get(0);
