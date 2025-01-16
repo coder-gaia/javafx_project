@@ -3,6 +3,8 @@ module org.example.javafx_project {
     requires javafx.fxml;
 
 
-    opens org.example.javafx_project to javafx.fxml;
-    exports org.example.javafx_project;
+    exports application;
+    opens application to javafx.fxml;
+    exports gui;
+    opens gui to javafx.fxml;
 }

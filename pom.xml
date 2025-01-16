@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>javafx_project</artifactId>
+   <artifactId>application</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>javafx_project</name>
 
@@ -60,7 +60,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>org.example.javafx_project/org.example.javafx_project.HelloApplication
+                            <mainClass>org.example.javafx_project/application.HelloApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
