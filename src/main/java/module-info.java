@@ -1,6 +1,7 @@
 module org.example.javafx_project {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.sql;
 
 
     exports application;
