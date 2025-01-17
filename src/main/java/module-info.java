@@ -7,10 +7,16 @@ module org.example.javafx_project {
 
     exports application;
     opens application to javafx.fxml;
+
     exports gui;
     opens gui to javafx.fxml;
+
     exports model.entities;
     opens model.entities to javafx.fxml;
+
     exports model.services;
     opens model.services to javafx.fxml;
+
+    exports gui.listeners;
+    opens gui.listeners to javafx.fxml;
 }
